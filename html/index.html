@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Быки и Коровы - логическая игра</title>
+        <link rel="stylesheet" href="../css/main.css">
+        <script src="../js/bullscows.js"></script>
+        <script src="../js/main.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">Ваш браузер <strong>устарел</strong>. Пожалуйста,  <a href="http://browsehappy.com/">обновите его</a>, чтобы получить наилучший опыт .</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div class="wrapper">
+            <div class="header">
+                <div class="inner-header">
+                    <div class="logo">
+                    <a href="#">
+                        <img src="../img/logo.png"/>
+                    </a>
+                </div>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li>
+                            <a href="#">Другие игры</a>
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Правила игры</a></li>
+                    </ul>
+                </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="inner-content">
+                    <div class="game-field">
+                        <input type="button" onclick="startGame()" value="Начать игру" id="startButton" class="btn">
+                        <div id="game">
+                            <div id="1">
+                                <p>Код не содержит повторяющихся цифр</p>
+                            </div>
+                            <div id="2">Введите код: <input type="number" name="usercod" id="usercode" min="0123" max="9876"><br>
+                            <input type="button" onclick="checkUserCode()" value="Отправить" class="btn"><br>
+                            <input type="button" onclick="restartGame()" value="Новая игра" class="btn">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
