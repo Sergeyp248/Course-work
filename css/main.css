@@ -54,46 +54,6 @@ body{
     width: 100%;
 }
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-textarea {
-    resize: vertical;
-}
-
-.browserupgrade {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
 #game {
     visibility: hidden;
 }
@@ -155,7 +115,6 @@ textarea {
 }
 
 @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
 }
 
 @media print,
@@ -163,12 +122,6 @@ textarea {
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
 
 @media print {
     *,
@@ -327,6 +280,8 @@ textarea {
 }
 
 .footer{
+    margin:auto;
+    text-align: center;
     position: fixed;
     bottom: 0;
     height: 6vw;
