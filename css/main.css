@@ -120,7 +120,6 @@ body{
 @media print,
        (min-resolution: 1.25dppx),
        (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
 }
 
 @media print {
@@ -130,8 +129,7 @@ body{
     *:first-letter,
     *:first-line {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
+        color: #000 !important; 
         box-shadow: none !important;
         text-shadow: none !important;
     }
@@ -149,10 +147,6 @@ body{
         content: " (" attr(title) ")";
     }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
 
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
@@ -164,11 +158,6 @@ body{
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
 
     thead {
         display: table-header-group;
@@ -196,8 +185,6 @@ body{
         page-break-after: avoid;
     }
 }
-
-/*=============== DROPDOWN MENU ===============*/
 
 .logo{
     align-items: center;
