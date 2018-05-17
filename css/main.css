@@ -325,3 +325,39 @@ textarea {
     height: auto;
     width: 25vw;    
 }
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 6vw;
+    width: 100%;
+    float: left;
+    background-color: #D660CC;
+}
+
+.bychok{
+    position: relative;
+    right: 10vw;
+    float: right;
+    width: 8vw;
+    height: 6vw;
+}
+
+.year{
+    font-family: sans-serif;
+    color:#fff;
+}
+
+.developers{
+    position: relative;
+    bottom:1vw;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 1vw;
+}
+
+.clear-fix{
+    display: block;
+    content:" ";
+    clear: both;
+}
