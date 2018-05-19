@@ -22,7 +22,7 @@ function checkUserCode(){
     let cows = 0;
     let duplicates = [];
     const p = document.createElement("p");
-    const div = document.getElementById("1");
+    const div = document.getElementById("warning");
     userCode = document.getElementById('usercode').value.split('');
     console.log(userCode);
     findDuplicates(userCode);

@@ -34,27 +34,38 @@
                 </div>
             </div>
             <div class="content">
+                <div class="cow-picture">
+                    <img src="../img/cow.png"/>
+                </div>
                 <div class="inner-content">
                     <div class="game-field">
                         <input type="button" onclick="startGame()" value="Начать игру" id="startButton" class="btn">
                         <div id="game">
-                            <div id="1">
+                            <div id="warning">
                                 <p>Код не содержит повторяющихся цифр</p>
                             </div>
-                            <div id="2">Введите код: <input type="number" name="usercod" id="usercode" min="0123" max="9876"><br>
-                            <input type="button" onclick="checkUserCode()" value="Отправить" class="btn"><br>
+                            <div id="play">Введите код: <input type="number" name="usercod" id="usercode" min="0123" max="9876">
+                            <input type="button" onclick="checkUserCode()" value="Отправить" class="btn">
                             <input type="button" onclick="restartGame()" value="Новая игра" class="btn">
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="bull-picture">
+                    <img src="../img/bychok.png"/>
+                </div>
             </div>
-             <div class="footer">
-            <img class="bychok" src="../img/bychok.png">
-            <h2 class="year">Bulls and cows © 2018.</h2>
-            <h3 class="developers">Designed and developed by Sergey Petrik and Vladislav Rogovskiy</h3>
-        </div>
-        <div class="clear-fix"></div>
+            <div class="footer">
+                <div class="inner-footer">
+                    <div class="rights">
+                        <span>Bulls and cows &copy 2018</span>
+                        <span class="developers">Designed and developed by Sergey Petrik and Vladislav Rogovskiy</span>
+                    </div>
+                    <div class="picture">
+                        <img src="../img/bull.png"/>
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
