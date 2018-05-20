@@ -1,16 +1,22 @@
 html {
-    color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
 
 body{
+    margin: 0px;
+}
+
+.wrapper{
     background-color: #ebc283;
     background-image: url(../img/background.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
-    margin: 0px;
+    height: auto;
+    width: 100%;
 }
+
+/*================== HEADER ==================*/
 
 .header{
     width: 100%;
@@ -27,18 +33,20 @@ body{
     width: 76%;
 }
 
+/*================== CONTENT ==================*/
+
 .content{
     align-items: center;
     display: flex;
     justify-content: space-around;
-    min-height: 33.8vw;
+    min-height: 34.5vw;
     width: 100%;
 }
 
 .cow-picture{
-    bottom: 200px;
+    top: 13vw;
     height: auto;
-    left: 50px;
+    left: 3.2vw;
     position: fixed;
     width: 20%;
 }
@@ -52,17 +60,17 @@ body{
     align-items: center;
     display: flex;
     justify-content: center;
-    height: 100%;
-    margin-top: 1vw;
-    margin-bottom: 1vw;
+    height: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
     width: 40%;
 }
 
 .bull-picture{
-    bottom: 200px;
+    top: 13vw;
     height: auto;
     position: fixed;
-    right: 50px;
+    right: 3.2vw;
     width: 20%;
 }
 
@@ -71,7 +79,7 @@ body{
     width: 100%;
 }
 
-.game-field{
+.game-field, .rules-field{
     align-items: center;
     background-color: rgba(214, 96, 204, 0.7);
     display: flex;
@@ -81,6 +89,14 @@ body{
     padding: 2vw;
     width: 100%;
 }
+
+.rules-field p{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.5vw;
+    text-align: justify;
+}
+
 
 #game {
     align-items: center;
@@ -127,12 +143,12 @@ body{
     justify-content: center;
 }
 
+/*================== FOOTER ==================*/
+
 .footer{
-    bottom: 0px;
     background-color: #d660cc;
     display: flex;
     justify-content: center;
-    position: relative;
     width: 100%;
 }
 
@@ -172,116 +188,7 @@ body{
     font-family: sans-serif;
 }
 
-.hidden {
-    display: none !important;
-}
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-.invisible {
-    visibility: hidden;
-}
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-@media only screen and (min-width: 35em) {
-}
-
-@media print,
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-}
-
-@media print {
-    *,
-    *:before,
-    *:after,
-    *:first-letter,
-    *:first-line {
-        background: transparent !important;
-        color: #000 !important; 
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group;
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-        display: block;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
-}
+/*================== DROPDOWN MENU ==================*/
 
 .logo{
     align-items: center;
@@ -361,4 +268,49 @@ body{
     display: block;
     height: auto;
     width: 25vw;    
+}
+
+.dropdown-menu ul ul li:hover{
+    background-color: #857070;
+}
+
+/*================== HIDDEN ==================*/
+
+.hidden {
+    display: none !important;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
 }
