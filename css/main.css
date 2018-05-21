@@ -1,8 +1,3 @@
-html {
-    font-size: 1em;
-    line-height: 1.4;
-}
-
 body{
     margin: 0px;
 }
@@ -270,10 +265,13 @@ body{
     width: 25vw;    
 }
 
+<<<<<<< HEAD
 .dropdown-menu ul ul li:hover{
     background-color: #857070;
 }
 
+=======
+>>>>>>> 6bc6a65c8de2f3e7c38e0aa3c4c2e47c131171f7
 /*================== HIDDEN ==================*/
 
 .hidden {
